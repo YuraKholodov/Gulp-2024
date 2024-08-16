@@ -99,7 +99,7 @@ gulp.task("scripts", function () {
 });
 
 gulp.task("watching", function () {
-  gulp.watch(["app/scss/style.scss"], gulp.parallel("styles"));
+  gulp.watch(["app/scss/**/*.scss"], gulp.parallel("styles"));
   gulp.watch(["app/images/src"], gulp.parallel("images"));
   gulp.watch(["app/js/main.js"], gulp.parallel("scripts"));
   gulp.watch(["app/components/*", "app/pages/*"], gulp.parallel("pages"));
